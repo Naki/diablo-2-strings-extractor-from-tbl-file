@@ -4,12 +4,12 @@ $script_root = dirname(__FILE__);
 require_once($script_root . "/../D2Tbl.class.php");
 
 // Language
-$lang = "eng";
+$language = "eng";
 
 // Get strings
-$strings_cl = D2Tbl::getStrings($script_root . "/tbl/" . $lang . "_string.tbl");
-$strings_lod = D2Tbl::getStrings($script_root . "/tbl/" . $lang . "_expansionstring.tbl");
-$strings_patch = D2Tbl::getStrings($script_root . "/tbl/" . $lang . "_patchstring_113c.tbl");
+$strings_cl = D2Tbl::getStrings($script_root . "/tbl/string_" . $language. ".tbl");
+$strings_lod = D2Tbl::getStrings($script_root . "/tbl/expansionstring_" . $language. ".tbl");
+$strings_patch = D2Tbl::getStrings($script_root . "/tbl/patchstring_113c_" . $language. ".tbl");
 
 if(!empty($strings_cl)) {
 	// Default array (classic)
