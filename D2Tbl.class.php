@@ -38,6 +38,7 @@ class D2Tbl {
 	* Credits to Ondo and Mephansteras.
 	* 
 	* @param mixed $filePath
+	* @param mixed $replaceSpecialCharacters
 	*/
 	public static function getStrings($filePath,$replaceSpecialCharacters = true) {
 		// Check file
